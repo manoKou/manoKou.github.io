@@ -1,5 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-cont{
+  padding: 20px;
+  min-height: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+.main-wrap{
+  text-align: center;
+  margin: 10px auto;
+  background-color: #c4789a;
+}
+
+.app-cont{
+  -webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.67);
+  -moz-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.67);
+  box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.67);
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.app-cont img{
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+}
+
+.main-text{
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 100;
+  color: white;
+}
+
+.options-cont{
+  padding: 15px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.broken-heart{
+  display: inline-block;
+}
+
+
+.broken-heart:hover {
+  cursor: pointer;
+}
+
+.heart {
+  background-color: red;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+  top: 13px;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.heart:hover {
+  cursor: pointer;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
 }
